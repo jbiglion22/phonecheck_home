@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PhoneCheck – Test Every Feature of Your Phone</title>
-<meta name="description" content="PhoneCheck lets you quickly test your phone's sensors, screen & touch, sound & vibration, battery, camera & flashlight, and connectivity — all in one app.">
+<title>폰체크 – 내 휴대폰 기능을 한 번에 점검</title>
+<meta name="description" content="폰체크는 센서, 화면·터치, 소리·진동, 배터리, 카메라·손전등, 네트워크 기능을 앱 하나로 빠르게 점검할 수 있는 앱입니다.">
 <link rel="alternate" hreflang="en" href="index.html">
 <link rel="alternate" hreflang="ko" href="index-ko.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #f6f8fb;
@@ -39,11 +39,13 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-family: "Inter", "Noto Sans KR", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
   a { color: inherit; text-decoration: none; }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
@@ -199,14 +201,14 @@
 
 <header>
   <div class="wrap nav">
-    <a href="#" class="brand"><span class="logo">✓</span>PhoneCheck</a>
+    <a href="#" class="brand"><span class="logo">✓</span>폰체크</a>
     <nav class="nav-links">
-      <a href="#features" class="hide-sm">Features</a>
-      <a href="#how" class="hide-sm">How it works</a>
-      <a href="#download" class="hide-sm">Download</a>
-      <div class="lang" aria-label="Language">
-        <a href="index.html" class="active" hreflang="en" lang="en">EN</a>
-        <a href="index-ko.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="#features" class="hide-sm">기능</a>
+      <a href="#how" class="hide-sm">사용 방법</a>
+      <a href="#download" class="hide-sm">다운로드</a>
+      <div class="lang" aria-label="언어">
+        <a href="index.html" hreflang="en" lang="en">EN</a>
+        <a href="index-ko.html" class="active" hreflang="ko" lang="ko">한국어</a>
       </div>
     </nav>
   </div>
@@ -217,30 +219,30 @@
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="badge">📱 Coming soon to Google Play</span>
-        <h1>Is your phone working right?<br><span class="grad">Check it in seconds.</span></h1>
-        <p class="lead">PhoneCheck tests your sensors, screen &amp; touch, sound &amp; vibration, battery, camera, and connectivity — all in one simple app. Perfect before buying a used phone, after a repair, or whenever something feels off.</p>
+        <span class="badge">📱 Google Play 출시 예정</span>
+        <h1>내 폰, 제대로 작동할까?<br><span class="grad">몇 초 만에 확인하세요.</span></h1>
+        <p class="lead">폰체크 하나로 센서, 화면·터치, 소리·진동, 배터리, 카메라, 네트워크까지 간편하게 점검할 수 있어요. 중고폰을 사기 전에, 수리를 받은 뒤에, 뭔가 이상하다고 느낄 때 언제든 확인해 보세요.</p>
         <div class="cta">
           <a href="#download" class="btn btn-primary">
             <span style="font-size:22px">▶</span>
-            <span class="stack"><small>Coming soon on</small>Google Play</span>
+            <span class="stack"><small>출시 예정</small>Google Play</span>
           </a>
-          <a href="#features" class="btn btn-ghost">See features →</a>
+          <a href="#features" class="btn btn-ghost">기능 살펴보기 →</a>
         </div>
       </div>
       <div class="phone-wrap" aria-hidden="true">
         <div class="phone">
           <div class="screen">
-            <h4>PhoneCheck</h4>
-            <div class="sub">Let's check your phone</div>
-            <div class="device-card"><b>My Phone Info</b>Android 15 · Battery 87% · 128GB</div>
-            <div class="check-row"><span>🧭 Sensor Check</span><span class="ok">PASS</span></div>
-            <div class="check-row"><span>👆 Screen &amp; Touch</span><span class="ok">PASS</span></div>
-            <div class="check-row"><span>🔊 Sound &amp; Vibration</span><span class="ok">PASS</span></div>
-            <div class="check-row"><span>🔋 Battery &amp; System</span><span class="ok">PASS</span></div>
-            <div class="check-row"><span>📷 Camera &amp; Flashlight</span><span class="ok">PASS</span></div>
-            <div class="check-row"><span>📶 Network Check</span><span class="ok">PASS</span></div>
-            <div class="run-all">Run Full Check</div>
+            <h4>폰체크</h4>
+            <div class="sub">내 휴대폰을 점검해 보세요</div>
+            <div class="device-card"><b>내 휴대폰 정보</b>Android 15 · 배터리 87% · 128GB</div>
+            <div class="check-row"><span>🧭 센서 체크</span><span class="ok">정상</span></div>
+            <div class="check-row"><span>👆 화면·터치 체크</span><span class="ok">정상</span></div>
+            <div class="check-row"><span>🔊 소리·진동 체크</span><span class="ok">정상</span></div>
+            <div class="check-row"><span>🔋 배터리·시스템 체크</span><span class="ok">정상</span></div>
+            <div class="check-row"><span>📷 카메라·손전등 체크</span><span class="ok">정상</span></div>
+            <div class="check-row"><span>📶 네트워크 체크</span><span class="ok">정상</span></div>
+            <div class="run-all">한 번에 전체 체크</div>
           </div>
         </div>
       </div>
@@ -251,46 +253,46 @@
   <section id="features">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">Features</span>
-        <h2>Everything your phone can do, checked</h2>
-        <p>Six focused check categories cover the hardware you rely on every day.</p>
+        <span class="eyebrow">주요 기능</span>
+        <h2>휴대폰의 모든 기능을 꼼꼼하게</h2>
+        <p>매일 사용하는 하드웨어를 6가지 체크 항목으로 빠짐없이 점검합니다.</p>
       </div>
       <div class="features">
         <article class="feature">
           <div class="icon">🧭</div>
-          <h3>Sensor Check</h3>
-          <p>See live readings from your phone's built-in sensors and confirm they respond correctly.</p>
-          <ul><li>Accelerometer</li><li>Gyroscope</li><li>Compass</li><li>Proximity</li><li>Light</li></ul>
+          <h3>센서 체크</h3>
+          <p>휴대폰에 내장된 센서의 실시간 값을 보고 제대로 반응하는지 확인하세요.</p>
+          <ul><li>가속도</li><li>자이로</li><li>나침반</li><li>근접</li><li>조도</li></ul>
         </article>
         <article class="feature">
           <div class="icon">👆</div>
-          <h3>Screen &amp; Touch Check</h3>
-          <p>Find dead pixels, color issues, and unresponsive touch areas across the whole display.</p>
-          <ul><li>Dead pixels</li><li>Colors</li><li>Multi-touch</li><li>Touch grid</li></ul>
+          <h3>화면·터치 체크</h3>
+          <p>화면 전체에서 불량 화소, 색상 이상, 터치가 안 되는 영역을 찾아냅니다.</p>
+          <ul><li>불량 화소</li><li>색상</li><li>멀티터치</li><li>터치 영역</li></ul>
         </article>
         <article class="feature">
           <div class="icon">🔊</div>
-          <h3>Sound &amp; Vibration Check</h3>
-          <p>Test the speakers, microphone, and vibration motor with simple guided steps.</p>
-          <ul><li>Speaker</li><li>Microphone</li><li>Vibration</li></ul>
+          <h3>소리·진동 체크</h3>
+          <p>간단한 안내에 따라 스피커, 마이크, 진동 모터를 테스트하세요.</p>
+          <ul><li>스피커</li><li>마이크</li><li>진동</li></ul>
         </article>
         <article class="feature">
           <div class="icon">🔋</div>
-          <h3>Battery &amp; System Check</h3>
-          <p>View battery status, temperature, and key system information at a glance.</p>
-          <ul><li>Battery health</li><li>Temperature</li><li>Storage</li><li>Memory</li></ul>
+          <h3>배터리·시스템 체크</h3>
+          <p>배터리 상태와 온도, 주요 시스템 정보를 한눈에 확인할 수 있어요.</p>
+          <ul><li>배터리 상태</li><li>온도</li><li>저장공간</li><li>메모리</li></ul>
         </article>
         <article class="feature">
           <div class="icon">📷</div>
-          <h3>Camera &amp; Flashlight Check</h3>
-          <p>Make sure the front and rear cameras and the flashlight work as expected.</p>
-          <ul><li>Rear camera</li><li>Front camera</li><li>Flashlight</li></ul>
+          <h3>카메라·손전등 체크</h3>
+          <p>전면·후면 카메라와 손전등이 정상적으로 작동하는지 확인하세요.</p>
+          <ul><li>후면 카메라</li><li>전면 카메라</li><li>손전등</li></ul>
         </article>
         <article class="feature">
           <div class="icon">📶</div>
-          <h3>Network Check</h3>
-          <p>Check Wi-Fi, mobile data, Bluetooth, and other connectivity features.</p>
-          <ul><li>Wi-Fi</li><li>Mobile data</li><li>Bluetooth</li><li>GPS</li></ul>
+          <h3>네트워크 체크</h3>
+          <p>Wi-Fi, 모바일 데이터, 블루투스 등 연결 기능을 점검합니다.</p>
+          <ul><li>Wi-Fi</li><li>모바일 데이터</li><li>블루투스</li><li>GPS</li></ul>
         </article>
       </div>
     </div>
@@ -301,16 +303,16 @@
     <div class="wrap">
       <div class="highlight">
         <div>
-          <span class="eyebrow" style="color:#fff;opacity:.85">One tap</span>
-          <h2>Full Check — everything at once</h2>
-          <p>No time to go through each test? Run Full Check and PhoneCheck walks you through every category in order, then shows a clear summary of what passed and what needs attention.</p>
+          <span class="eyebrow" style="color:#fff;opacity:.85">원터치</span>
+          <h2>한 번에 전체 체크</h2>
+          <p>하나씩 점검할 시간이 없나요? 「한 번에 전체 체크」를 누르면 모든 항목을 순서대로 안내하고, 정상인 기능과 확인이 필요한 기능을 깔끔하게 정리해 보여드려요.</p>
         </div>
         <div class="progress" aria-hidden="true">
-          <div class="progress-item">Sensors<div class="bar"><i style="width:100%"></i></div></div>
-          <div class="progress-item">Screen &amp; Touch<div class="bar"><i style="width:100%"></i></div></div>
-          <div class="progress-item">Sound &amp; Vibration<div class="bar"><i style="width:100%"></i></div></div>
-          <div class="progress-item">Battery &amp; System<div class="bar"><i style="width:80%"></i></div></div>
-          <div class="progress-item" style="margin-bottom:0">Network<div class="bar"><i style="width:45%"></i></div></div>
+          <div class="progress-item">센서<div class="bar"><i style="width:100%"></i></div></div>
+          <div class="progress-item">화면·터치<div class="bar"><i style="width:100%"></i></div></div>
+          <div class="progress-item">소리·진동<div class="bar"><i style="width:100%"></i></div></div>
+          <div class="progress-item">배터리·시스템<div class="bar"><i style="width:80%"></i></div></div>
+          <div class="progress-item" style="margin-bottom:0">네트워크<div class="bar"><i style="width:45%"></i></div></div>
         </div>
       </div>
     </div>
@@ -320,13 +322,13 @@
   <section id="how">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">How it works</span>
-        <h2>Three steps to peace of mind</h2>
+        <span class="eyebrow">사용 방법</span>
+        <h2>3단계로 끝나는 휴대폰 점검</h2>
       </div>
       <div class="steps">
-        <div class="step"><h3>Open PhoneCheck</h3><p>Your phone's key info appears on the home screen right away.</p></div>
-        <div class="step"><h3>Pick a check</h3><p>Choose a single category, or run Full Check to test everything.</p></div>
-        <div class="step"><h3>See the results</h3><p>Follow the on-screen guide and instantly see what works and what doesn't.</p></div>
+        <div class="step"><h3>폰체크 실행</h3><p>홈 화면에서 내 휴대폰의 주요 정보를 바로 확인할 수 있어요.</p></div>
+        <div class="step"><h3>체크 항목 선택</h3><p>원하는 항목만 고르거나, 「한 번에 전체 체크」로 모두 점검하세요.</p></div>
+        <div class="step"><h3>결과 확인</h3><p>화면 안내를 따라 하면 무엇이 정상이고 무엇이 문제인지 바로 알 수 있어요.</p></div>
       </div>
     </div>
   </section>
@@ -335,14 +337,14 @@
   <section>
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">Why PhoneCheck</span>
-        <h2>Made for real-life moments</h2>
+        <span class="eyebrow">왜 폰체크인가요</span>
+        <h2>이럴 때 필요해요</h2>
       </div>
       <div class="why">
-        <div><div class="emoji">🛒</div><h3>Buying used</h3><p>Check a second-hand phone before you pay.</p></div>
-        <div><div class="emoji">💸</div><h3>Selling your phone</h3><p>Show buyers that everything works.</p></div>
-        <div><div class="emoji">🔧</div><h3>After a repair</h3><p>Confirm the fix really worked.</p></div>
-        <div><div class="emoji">🌐</div><h3>English &amp; Korean</h3><p>Follows your phone's language, or pick one in Settings.</p></div>
+        <div><div class="emoji">🛒</div><h3>중고폰 구매</h3><p>결제하기 전에 중고폰 상태를 확인하세요.</p></div>
+        <div><div class="emoji">💸</div><h3>휴대폰 판매</h3><p>구매자에게 모든 기능이 정상임을 보여주세요.</p></div>
+        <div><div class="emoji">🔧</div><h3>수리 후 점검</h3><p>수리가 제대로 되었는지 확인하세요.</p></div>
+        <div><div class="emoji">🌐</div><h3>한국어·영어 지원</h3><p>휴대폰 언어를 자동으로 따르고, 설정에서 직접 고를 수도 있어요.</p></div>
       </div>
     </div>
   </section>
@@ -351,14 +353,14 @@
   <section id="download" class="download">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">Download</span>
-        <h2>Get PhoneCheck</h2>
-        <p>PhoneCheck is launching soon on Google Play for Android.</p>
+        <span class="eyebrow">다운로드</span>
+        <h2>폰체크 받기</h2>
+        <p>폰체크는 곧 Google Play에서 안드로이드용으로 출시됩니다.</p>
       </div>
       <div class="cta">
         <a href="#" class="btn btn-primary" aria-disabled="true">
           <span style="font-size:22px">▶</span>
-          <span class="stack"><small>Coming soon on</small>Google Play</span>
+          <span class="stack"><small>출시 예정</small>Google Play</span>
         </a>
       </div>
     </div>
@@ -367,10 +369,10 @@
 
 <footer>
   <div class="wrap foot">
-    <div>© 2026 PhoneCheck. All rights reserved.</div>
-    <div class="lang" aria-label="Language">
-      <a href="index.html" class="active" hreflang="en" lang="en">EN</a>
-      <a href="index-ko.html" hreflang="ko" lang="ko">한국어</a>
+    <div>© 2026 폰체크(PhoneCheck). All rights reserved.</div>
+    <div class="lang" aria-label="언어">
+      <a href="index.html" hreflang="en" lang="en">EN</a>
+      <a href="index-ko.html" class="active" hreflang="ko" lang="ko">한국어</a>
     </div>
   </div>
 </footer>
